@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="device=width-device, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css">
+  <title>Technical Documentation Page</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header class="nav-header">
+        <h1>HTML Tutorial</h1>
+      </header>
+      <ul>
+        <li><a class="nav-link" href="#overview">Overview</a></li>
+        <li><a class="nav-link" href="#basic_tags">Basic Tags</a></li>
+        <li><a class="nav-link" href="#elements">Elements</a></li>
+        <li><a class="nav-link" href="#attributes">Attributes</a></li>
+        <li><a class="nav-link" href="#formatting">Formatting</a></li>
+        <li><a class="nav-link" href="#meta_tags">Meta Tags</a></li>
+        <li><a class="nav-link" href="#comments">Comments</a></li>
+        <li><a class="nav-link" href="#images">Images</a></li>
+        <li><a class="nav-link" href="#tables">Tables</a></li>
+        <li><a class="nav-link" href="#lists">Lists</a></li>
+        <li><a class="nav-link" href="#text_links">Text Links</a></li>
+        <li><a class="nav-link" href="#image_links">Image Links</a></li>
+        <li><a class="nav-link" href="#email_links">Email Links</a></li>
+        <li><a class="nav-link" href="#reference">Reference</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <h1 class="show-hide">HTML Tutorial</h1>
+<section class="main-section" id="overview">
+  <header><h2>Overview</h2></header>
+  <p>HTML stands for Hypertext Markup Language, and it is the most widely used language to write Web Pages.</p>
+<ul>
+  <li><strong>Hypertext</strong> refers to the way in which Web pages (HTML documents) are linked together. Thus, the link available on a webpage is called Hypertext.</li>
+  <li>As its name suggests, HTML is a <strong>Markup Language</strong> which means you use HTML to simply "mark-up" a text document with tags that tell a Web browser how to structure it to display.</li>
+</ul>
+<p>Originally, HTML was developed with the intent of defining the structure of documents like headings, paragraphs, lists, and so forth to facilitate the sharing of scientific information between researchers.</p>
+<p>Now, HTML is being widely used to format web pages with the help of different tags available in HTML language.</p>
+<p><strong>Basic HTML Document</strong></p>
+<p>In its simplest form, following is an example of an HTML document −</p>
+<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+   &lt;head&gt;
+      &lt;title&gt;This is document title&lt;/title&gt;
+   &lt;/head&gt;
+	
+   &lt;body&gt;
+      &lt;h1&gt;This is a heading&lt;/h1&gt;
+      &lt;p&gt;Document content goes here.....&lt;/p&gt;
+   &lt;/body&gt;
+	
+&lt;/html&gt;
+</code>
+</pre>
+</section>
+
+<section class="main-section" id="basic_tags">
+  <header><h2>Basic Tags</h2></header>
+  <p><strong>Heading Tags</strong></p>
+  <p>Any document starts with a heading. You can use different sizes for your headings. HTML also has six levels of headings, which use the elements <strong>&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;,</strong> and <strong>&lt;h6&gt;.</strong> While displaying any heading, browser adds one line before and one line after that heading.</p>
+  <p><strong>Example</strong></p>
+  <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+   &lt;head&gt;
+      &lt;title&gt;Heading Example&lt;/title&gt;
+   &lt;/head&gt;
+	
+   &lt;body&gt;
+      &lt;h1&gt;This is heading 1&lt;/h1&gt;
+      &lt;h2&gt;This is heading 2&lt;/h2&gt;
+      &lt;h3&gt;This is heading 3&lt;/h3&gt;
+      &lt;h4&gt;This is heading 4&lt;/h4&gt;
+      &lt;h5&gt;This is heading 5&lt;/h5&gt;
+      &lt;h6&gt;This is heading 6&lt;/h6&gt;
+   &lt;/body&gt;
+	
+&lt;/html&gt;</code></pre>
+
+<p><strong>Paragraph Tag</strong></p>
+<p>The <strong>&lt;p&gt;</strong> tag offers a way to structure your text into different paragraphs. Each paragraph of text should go in between an opening &lt;p&gt; and a closing &lt;/p&gt; tag as shown below in the example −</p>
+<p><strong>Example</strong></p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+   &lt;head&gt;
+      &lt;title&gt;Paragraph Example&lt;/title&gt;
+   &lt;/head&gt;
+	
+   &lt;body&gt;
+      &lt;p&gt;Here is a first paragraph of text.&lt;/p&gt;
+      &lt;p&gt;Here is a second paragraph of text.&lt;/p&gt;
+      &lt;p&gt;Here is a third paragraph of text.&lt;/p&gt;
+   &lt;/body&gt;
+	
+&lt;/html&gt;</code></pre>
+
+<p><strong>Line Break Tag</strong></p>
+<p>Whenever you use the &lt;br /&gt; element, anything following it starts from the next line. This tag is an example of an <strong>empty</strong> element, where you do not need opening and closing tags, as there is nothing to go in between them.</p>
+<p>The &lt;br /&gt; tag has a space between the characters <strong>br</strong> and the forward slash. If you omit this space, older browsers will have trouble rendering the line break, while if you miss the forward slash character and just use &lt;br&gt; it is not valid in XHTML.</p>
+<p><strong>Example</strong></p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+   &lt;head&gt;
+      &lt;title&gt;Line Break  Example&lt;/title&gt;
+   &lt;/head&gt;
+	
+   &lt;body&gt;
+      &lt;p&gt;Hello&lt;br /&gt;
+         You delivered your assignment ontime.&lt;br /&gt;
+         Thanks&lt;br /&gt;
+         Mahnaz&lt;/p&gt;
+   &lt;/body&gt;
+	
+&lt;/html&gt;</code></pre>
+</section>
+
+<section class="main-section" id="elements">
+  <header><h1>Elements</h1></header>
+  <p>An <strong>HTML</strong> element is defined by a starting tag. If the element contains other content, it ends with a closing tag, where the element name is preceded by a forward slash as shown below with few tags −</p>
+  <table class="element-table">
+    <tbody>
+      <tr>
+        <th>Start Tag</th>
+        <th>Content</th>
+        <th>End Tag</th>
+      </tr>
+      <tr>
+        <td>&lt;p&gt;</td>
+        <td>This is paragraph content.</td>
+        <td>&lt;/p&gt;</td>
+      </tr>
+      <tr>
+        <td>&lt;h1&gt;</td>
+        <td>This is heading content.</td>
+        <td>&lt;/h1&gt;</td>
+      </tr>
+      <tr>
+        <td>&lt;div&gt;</td>
+        <td>This is division content.</td>
+        <td>&lt;/div&gt;</td>
+      </tr>
+      <tr>
+        <td>&lt;br /&gt;</td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <p>So here <strong>&lt;p&gt;....&lt;/p&gt;</strong> is an HTML element, <strong>&lt;h1&gt;...&lt;/h1&gt;</strong> is another HTML element. There are some HTML elements which don't need to be closed, such as <strong>&lt;img.../&gt;, &lt;hr /&gt;</strong> and <strong>&lt;br /&gt;</strong> elements. These are known as <strong>void elements.</strong></p>
+</section>
+
+<section class="main-section" id="attributes">
+  <header><h1>Attributes</h1></header>
+  <p>We have seen few HTML tags and their usage like heading tags <strong>&lt;h1&gt;, &lt;h2&gt;</strong>, paragraph tag <strong>&lt;p&gt;</strong> and other tags. We used them so far in their simplest form, but most of the HTML tags can also have attributes, which are extra bits of information.</p>
+
+<p>An attribute is used to define the characteristics of an HTML element and is placed inside the element's opening tag. All attributes are made up of two parts − a <strong>name</strong> and a <strong>value</strong></p>
+<ul>
+<li>The <strong>name</strong> is the property you want to set. For example, the paragraph <strong>&lt;p&gt;</strong> element in the example carries an attribute whose name is <strong>align</strong>, which you can use to indicate the alignment of paragraph on the page.</li>
+
+<li>The value is what you want the <strong>value</strong> of the property to be set and always put within quotations. The below example shows three possible values of align attribute: <strong>left, center</strong> and <strong>right.</strong></li>
+</ul>
+
+Attribute names and attribute values are case-insensitive. However, the World Wide Web Consortium (W3C) recommends lowercase attributes/attribute values in their HTML 4 recommendation.
+
+<p><strong>Example</strong></p>
+<pre><code>&lt;!DOCTYPE html&gt; 
+&lt;html&gt;
+ 
+   &lt;head&gt; 
+      &lt;title&gt;Align Attribute  Example&lt;/title&gt; 
+   &lt;/head&gt;
+	
+   &lt;body&gt; 
+      &lt;p align = &quot;left&quot;&gt;This is left aligned&lt;/p&gt; 
+      &lt;p align = &quot;center&quot;&gt;This is center aligned&lt;/p&gt; 
+      &lt;p align = &quot;right&quot;&gt;This is right aligned&lt;/p&gt; 
+   &lt;/body&gt;
+	
+&lt;/html&gt;
+</code>
+</pre>
+</section>
+
+<section class="main-section" id="formatting">
+  <header><h1>Formatting</h1></header>
+  <p>Formatting elements were designed to display special types of text:</p>
+  <ul>
+    <li>&lt;b&gt; - Bold text</li>
+    <li>&lt;strong&gt; - Important text</li>
+    <li>&lt;i&gt; - Italic text</li>
+    <li>&lt;em&gt; - Emphasized text</li>
+    <li>&lt;mark&gt; - Marked text</li>
+    <li>&lt;small&gt; - Smaller text</li>
+    <li>&lt;del&gt; - Deleted text</li>
+    <li>&lt;ins&gt; - Inserted text</li>
+    <li>&lt;sub&gt; - Subscript text</li>
+    <li>&lt;sup&gt; - Superscript text</li>
+  </ul>
+</section>
+
+<section class="main-section" id="meta_tags">
+  <header><h1>Meta Tags</h1></header>
+  <p>HTML lets you specify metadata - additional important information about a document in a variety of ways. The META elements can be used to include name/value pairs describing properties of the HTML document, such as author, expiry date, a list of keywords, document author etc.</p>
+  <p>The <strong>&lt;meta&gt;</strong> tag is used to provide such additional information. This tag is an empty element and so does not have a closing tag but it carries information within its attributes.</p>
+  <p>You can include one or more meta tags in your document based on what information you want to keep in your document but in general, meta tags do not impact physical appearance of the document so from appearance point of view, it does not matter if you include them or not.</p>
+</section>
+<section class="main-section" id="comments">
+  <header><h1>Comments</h1></header>
+  <p>Comment is a piece of code which is ignored by any web browser. It is a good practice to add comments into your HTML code, especially in complex documents, to indicate sections of a document, and any other notes to anyone looking at the code. Comments help you and others understand your code and increases code readability.</p>
+  <p>HTML comments are placed in between <strong>&lt;!-- ... --&gt;</strong> tags. So, any content placed with-in <strong>&lt;!-- ... --&gt;</strong>tags will be treated as comment and will be completely ignored by the browser.</p>
+  <strong>Example</strong>
+  <pre>
+    <code>
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+
+       &lt;head&gt;  &lt;!-- Document Header Starts --&gt;
+         &lt;title&gt;This is document title&lt;/title&gt;
+       &lt;/head&gt; &lt;!-- Document Header Ends --&gt;
+	
+       &lt;body&gt;
+         &lt;p&gt;Document content goes here.....&lt;/p&gt;
+       &lt;/body&gt;
+	
+  &lt;/html&gt;
+    </code>
+  </pre>
+</section>
+<section class="main-section" id="images">
+  <header><h1>Images</h1></header>
+  <p>Images are very important to beautify as well as to depict many complex concepts in simple way on your web page. This tutorial will take you through simple steps to use images in your web pages.</p>
+<strong>Insert Image</strong>
+<p>You can insert any image in your web page by using <strong>&lt;img&gt;</strong> tag. Following is the simple syntax to use this tag.</p>
+<pre>
+  <code>
+&lt;img src = &quot;Image URL&quot; ... attributes-list/&gt;
+  </code>
+</pre>
+<p>The &lt;img&gt; tag is an empty tag, which means that, it can contain only list of attributes and it has no closing tag.</p>
+<strong>Example</strong>
+<pre>
+  <code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+   &lt;head&gt;
+      &lt;title&gt;Using Image in Webpage&lt;/title&gt;
+   &lt;/head&gt;
+	
+   &lt;body&gt;
+      &lt;p&gt;Simple Image Insert&lt;/p&gt;
+      &lt;img src = &quot;/html/images/test.png&quot; alt = &quot;Test Image&quot; /&gt;
+   &lt;/body&gt;
+	
+&lt;/html&gt;
+  </code>
+</pre>
+</section>
+<section class="main-section" id="tables">
+  <header><h1>Tables</h1></header>
+  <p>The HTML tables allow web authors to arrange data like text, images, links, other tables, etc. into rows and columns of cells.</p>
+
+<p>The HTML tables are created using the <strong>&lt;table&gt;</strong> tag in which the <strong>&lt;tr&gt;</strong> tag is used to create table rows and <strong>&lt;td&gt;</strong> tag is used to create data cells. The elements under <strong>&lt;td&gt;</strong> are regular and left aligned by default</p>
+
+<strong>Example</strong>
+<pre>
+  <code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+   &lt;head&gt;
+      &lt;title&gt;HTML Tables&lt;/title&gt;
+   &lt;/head&gt;
+	
+   &lt;body&gt;
+      &lt;table border = &quot;1&quot;&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Row 1, Column 1&lt;/td&gt;
+            &lt;td&gt;Row 1, Column 2&lt;/td&gt;
+         &lt;/tr&gt;
+         
+         &lt;tr&gt;
+            &lt;td&gt;Row 2, Column 1&lt;/td&gt;
+            &lt;td&gt;Row 2, Column 2&lt;/td&gt;
+         &lt;/tr&gt;
+      &lt;/table&gt;
+      
+   &lt;/body&gt;
+&lt;/html&gt;
+  </code>
+</pre>
+</section>
+<section class="main-section" id="lists">
+  <header><h1>Lists</h1></header>
+  <p>HTML lists allow web developers to group a set of related items in lists.</p>
+  <strong>Unordered HTML List</strong>
+<p>An unordered list starts with the <strong>&lt;ul&gt;</strong> tag. Each list item starts with the <strong>&lt;li&gt;</strong> tag.</p>
+<p>The list items will be marked with bullets (small black circles) by default:</p>
+<strong>Example</strong>
+  <pre>
+    <code>
+&lt;ul&gt;
+  &lt;li&gt;Coffee&lt;/li&gt;
+  &lt;li&gt;Tea&lt;/li&gt;
+  &lt;li&gt;Milk&lt;/li&gt;
+&lt;/ul&gt;</code>
+  </pre>
+
+<strong>Ordered HTML List</strong>
+<p>An ordered list starts with the <strong>&lt;ol&gt;</strong> tag. Each list item starts with the <strong>&lt;li&gt;</strong> tag.</p>
+
+<p>The list items will be marked with numbers by default:</p>
+<strong>Example</strong>
+  <pre>
+    <code>
+&lt;ol&gt;
+  &lt;li&gt;Coffee&lt;/li&gt;
+  &lt;li&gt;Tea&lt;/li&gt;
+  &lt;li&gt;Milk&lt;/li&gt;
+&lt;/ol&gt;</code>
+  </pre>
+</section>
+<section class="main-section" id="text_links">
+  <header><h1>Text Links</h1></header>
+<p>A webpage can contain various links that take you directly to other pages and even specific parts of a given page. These links are known as hyperlinks.</p>
+
+<p>Hyperlinks allow visitors to navigate between Web sites by clicking on words, phrases, and images. Thus you can create hyperlinks using text or images available on a webpage.</p>
+
+<strong>Linking Documents</strong>
+<p>A link is specified using HTML tag &lt;a&gt;. This tag is called <strong>anchor tag</strong> and anything between the opening &lt;a&gt; tag and the closing &lt;/a&gt; tag becomes part of the link and a user can click that part to reach to the linked document. Following is the simple syntax to use &lt;a&gt; tag.</p>
+
+<pre>
+  <code>
+&lt;a href = &quot;Document URL&quot; ... attributes-list&gt;Link Text&lt;/a&gt; 
+  </code>
+</pre>
+
+</section>
+<section class="main-section" id="image_links">
+  <header><h1>Image Links</h1></header>
+  <p>We have seen how to create hypertext link using text and we also learnt how to use images in our webpages. Now, we will learn how to use images to create hyperlinks.</p>
+<strong>Example</strong>
+<p>It's simple to use an image as hyperlink. We just need to use an image inside hyperlink at the place of text as shown below −</p>
+
+<pre>
+  <code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+   &lt;head&gt;
+      &lt;title&gt;Image Hyperlink Example&lt;/title&gt;
+   &lt;/head&gt;
+	
+   &lt;body&gt;
+      &lt;p&gt;Click following link&lt;/p&gt;
+      &lt;a href = &quot;https://www.tutorialspoint.com&quot; target = &quot;_self&quot;&gt; 
+         &lt;img src = &quot;/images/logo.png&quot; alt = &quot;Tutorials Point&quot; border = &quot;0&quot;/&gt; 
+      &lt;/a&gt;
+   &lt;/body&gt;
+	
+&lt;/html&gt;   
+  </code>
+</pre>
+
+</section>
+<section class="main-section" id="email_links">
+  <header><h1>Email Links</h1></header>
+<p>HTML <strong>&lt;a&gt;</strong> tag provides you option to specify an email address to send an email. While using &lt;a&gt; tag as an email tag, you will use <strong>mailto: email address</strong> along with href attribute. Following is the syntax of using <strong>mailto</strong> instead of using http.</p>
+
+<pre>
+  <code>
+&lt;a href = &quot;mailto: abc@example.com&quot;&gt;Send Email&lt;/a&gt;
+  </code>
+</pre>
+</section>
+
+<section class="main-section" id="reference">
+  <header><h1>Reference</h1></header>
+  <ul>
+    <li>All the documentation in this page is taken from <a href="https://www.tutorialspoint.com/html/index.htm">HTML - Tutorials Point</a></li>
+  </ul>
+</section>
+
+    </main>
+  </body>
+</html>
+
+
+
